@@ -1,0 +1,64 @@
+body {
+    font-family: monospace;
+}
+
+ul {
+    font-family: helvetica;
+}
+
+li {
+    list-style: circle;
+}
+
+.list {
+    list-style: square;
+}
+
+#msg {
+    font-family: monospace;
+}
+/**
+.list e #msg vinheram do html, assim é possivel 
+selecionar o elemento que estaremos estilizando
+**/
+
+.light-theme {
+    color: #000000;
+    background: #00ff00;
+}
+
+:root {
+    --green: #00ff00;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+/**  Seletor root representa  elemento <html> na página HTML**/
+
+* {
+    color: var(--fontColor);
+    font-family: helvetica;
+}
+
+body {
+    background: var(--bg);
+}
+
+/**Substituindo o seletor de body atual e adicionando a nova criada
+a baixo.**/
+
+.light-theme {
+    --bg: var (--green);
+    --fontColor: var(--black);
+}
+
+.dark-theme {
+    --bg: var (--black);
+    --fontColor: var (--green);
+}
+
+/** Criando tema escuro e tema claro
+bg define a cor de fundo e fontColor define a cor da fonte**/
+
+
+
