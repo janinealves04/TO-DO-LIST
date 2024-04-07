@@ -54,7 +54,7 @@ a baixo.**/
 
 .dark-theme {
     --bg: var (--black);
-    --fontColor: var (--green);
+    --fontColor: var(--green);
 }
 
 /** Criando tema escuro e tema claro
