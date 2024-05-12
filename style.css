@@ -2,6 +2,10 @@ body {
     font-family: monospace;
 }
 
+h1 {
+    text-align: center;
+}
+
 ul {
     font-family: helvetica;
 }
@@ -26,6 +30,7 @@ selecionar o elemento que estaremos estilizando
 .light-theme {
     color: #000000;
     background: #00ff00;
+    text-align: left;
 }
 
 .dark-theme {
@@ -35,8 +40,8 @@ selecionar o elemento que estaremos estilizando
 
 :root {
     --green: #00ff00;
-    --white: #ffffff;
-    --black: #000000;
+    --Green2: #72ca76;
+    --black: #000000ad;
 }
 
 /**  Seletor root representa  elemento <html> na página HTML**/
@@ -54,33 +59,35 @@ body {
 a baixo.**/
 
 .light-theme {
-    --bg: var (--green);
+    --bg: var(--green);
     --fontColor: var(--black);
-    --btnBg: var(--white);
-    --btnFontColor: var(--white);
+    --btnBg: var(--Green2);
+    --bntFontColor: var(--white);
+
 }
 
 .dark-theme {
-    --bg: var (--black);
+    --bg: var(--black);
     --fontColor: var(--green);
-    --btnBg: var(--black);
+    --btnBg: var(--green);
     --btnFontColor: var(--black);
 }
 
 /** Criando tema escuro e tema claro
 bg define a cor de fundo e fontColor define a cor da fonte**/
-
+.btn-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
 
 .btn {
-    position: absolute;
-    top: 20px;
-    left: 250px;
     height: 50px;
     width: 50px;
     border-radius: 50%;
     border: none;
-    color: var(--bntFontColor);
-    background-color: var(--bntBg);
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
 }
 
 .btn:focus {outline-style: none;}
