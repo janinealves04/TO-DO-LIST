@@ -1,13 +1,13 @@
 body {
-    font-family: monospace;
+    font-family: Arial;
 }
 
 h1 {
-    text-align: center;
+    text-align: left;
 }
 
 ul {
-    font-family: helvetica;
+    font-family: Arial;
 }
 
 li {
@@ -19,7 +19,7 @@ li {
 }
 
 #msg {
-    font-family: monospace;
+    font-family: Arial;
 }
 
 /**
@@ -29,26 +29,27 @@ selecionar o elemento que estaremos estilizando
 
 .light-theme {
     color: #000000;
-    background: #00ff00;
+    background: #ffffff;
     text-align: left;
 }
 
 .dark-theme {
-    color: #00ff00;
-    background: #000000;
+    color: #4bc54b;
+    background: #3d3d3f;
 }
 
 :root {
-    --green: #00ff00;
-    --Green2: #72ca76;
-    --black: #000000ad;
+    --green: #4bc54b;
+    --black: #000000;
+    --white: #ffffff;
+    --darkColor: #3d3d3f;
 }
 
 /**  Seletor root representa  elemento <html> na página HTML**/
 
 * {
     color: var(--fontColor);
-    font-family: helvetica;
+    font-family: Arial;
 }
 
 body {
@@ -59,9 +60,9 @@ body {
 a baixo.**/
 
 .light-theme {
-    --bg: var(--green);
-    --fontColor: var(--black);
-    --btnBg: var(--Green2);
+    --bg: var(--white);
+    --fontColor: var(--green);
+    --btnBg: var(--darkColor);
     --bntFontColor: var(--white);
 
 }
@@ -70,7 +71,7 @@ a baixo.**/
     --bg: var(--black);
     --fontColor: var(--green);
     --btnBg: var(--green);
-    --btnFontColor: var(--black);
+    --btnFontColor: var(--darkColor);
 }
 
 /** Criando tema escuro e tema claro
